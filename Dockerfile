@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:python-3.10
+FROM python:3.10-bullseye
 LABEL org.opencontainers.image.source="https://github.com/turnmanh/test-codespaces"
 
 
