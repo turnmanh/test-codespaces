@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and push image to ghcr
         run: |
-          docker login --username turnmanh --password ${{  secrets.GHTOKEN }} ghcr.io
-          docker build . -t ghcr.io/turnmanh/test-codespaces:latest
-          docker push ghcr.io/turnmanh/test-codespaces:latest
+          docker login --username ${{github.actor}} --password ${{secrets.GH_TOKEN}} ghcr.io
+          docker build . -t ghcr.io/turnmanh/test-custom-codespaces:latest
+          docker push ghcr.io/turnmanh/test-custom-codespaces:latest
   
