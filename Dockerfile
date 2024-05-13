@@ -1,4 +1,4 @@
-FROM python:3.10-bullseye
+FROM python:3.10-alpine
 LABEL org.opencontainers.image.source="https://github.com/turnmanh/test-codespaces"
 
 
