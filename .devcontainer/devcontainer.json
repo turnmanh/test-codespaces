@@ -3,7 +3,7 @@
 {
 	"name": "Custom Dev Image",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/turnmanh/test-codespaces:latest",
+	"image": "ghcr.io/turnmanh/test-custom-codespaces:latest",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
