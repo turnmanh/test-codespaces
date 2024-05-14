@@ -5,4 +5,6 @@ RUN apt update -y && \
     apt install -y pkg-config libhdf5-dev build-essential && \
     apt install -y gobjc gfortran gnat 
 
+COPY . /tmp
+WORKDIR /tmp
 RUN pip install -r requirements.txt
