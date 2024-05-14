@@ -5,4 +5,4 @@ RUN apt update -y && \
     apt install -y pkg-config libhdf5-dev build-essential && \
     apt install -y gobjc gfortran gnat 
 
-RUN pip install sbi
+RUN pip install -r requirements.txt
