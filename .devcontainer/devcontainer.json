@@ -3,8 +3,8 @@
 {
 	"name": "Custom Dev Image",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	// "image": "ghcr.io/turnmanh/test-custom-codespaces:latest",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "ghcr.io/turnmanh/test-custom-codespaces:latest",
+	// "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
