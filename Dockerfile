@@ -10,4 +10,5 @@ COPY . /tfl-training-practical-anomaly-detection
 WORKDIR /tfl-training-practical-anomaly-detection
 
 RUN pip install -r requirements.txt && \
+    pip install click cryptography && \
     pip install -e .
