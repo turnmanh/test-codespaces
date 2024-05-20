@@ -3,8 +3,11 @@ LABEL org.opencontainers.image.source="https://github.com/turnmanh/test-codespac
 
 RUN apt update -y && \ 
     apt install -y pkg-config libhdf5-dev build-essential && \
-    apt install -y gobjc gfortran gnat 
+    apt install -y gobjc gfortran gnat python-dev
 
-COPY . /tmp
-WORKDIR /tmp
-RUN pip install -r requirements.txt
+COPY . /tfl-training-practical-anomaly-detection
+
+WORKDIR /tfl-training-practical-anomaly-detection
+
+RUN pip install -r requirements.txt && \
+    pip install -e .
