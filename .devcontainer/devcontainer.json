@@ -1,21 +1,16 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "Custom Dev Image",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/turnmanh/test-custom-codespaces:latest",
-	// "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	"image": "ghcr.io/turnmanh/test-custom-codespaces:latest",
+
 	"features": {
 	    "ghcr.io/devcontainers/features/common-utils:2": {
 	      "version": "latest"
 	    }
 	},
 
-	// Configure tool-specific properties.
 	"customizations": {
-		// Configure properties specific to VS Code.
+		// configure specific extensions we recommend
 		"vscode": {
 			"settings": {},
 			"extensions": [
@@ -27,20 +22,8 @@
 		}
 	},
 	
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// open the default port for jupyter notebook
 	"forwardPorts": [8888]
-
-	// Use 'portsAttributes' to set default properties for specific forwarded ports. 
-	// More info: https://containers.dev/implementors/json_reference/#port-attributes
-	// "portsAttributes": {
-	// 	"9000": {
-	// 		"label": "Hello Remote World",
-	// 		"onAutoForward": "notify"
-	// 	}
-	// },
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install -r requirements.txt"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
