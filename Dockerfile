@@ -5,10 +5,9 @@ RUN apt update -y && \
     apt install -y pkg-config libhdf5-dev build-essential && \
     apt install -y gobjc gfortran gnat python-dev
 
-COPY . /tfl-training-practical-anomaly-detection
+COPY . /tmp
 
-WORKDIR /tfl-training-practical-anomaly-detection
+WORKDIR /tmp
 
 RUN pip install -r requirements.txt && \
-    pip install click cryptography && \
-    pip install -e .
+    pip install click cryptography 
